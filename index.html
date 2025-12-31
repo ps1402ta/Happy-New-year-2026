@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 | EXTREME NEW YEAR EXPERIENCE</title>
+</head>
+<body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div class="bg-gradient-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <main id="viewport">
+        
+        <section class="step active" id="step-1" data-step="1">
+            <div class="glass-card">
+                <h1 class="glitch" data-text="WELCOME TO 2025">WELCOME TO 2025</h1>
+                <p>You are about to enter a high-performance countdown zone.</p>
+                <div class="loader-bar"><div class="progress"></div></div>
+                <button class="mega-btn" onclick="nextStep(2)">INITIALIZE SYSTEM</button>
+            </div>
+        </section>
+
+        <section class="step" id="step-2" data-step="2">
+            <div class="grid-layout">
+                <div class="meme-container">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueGZ3bmZ3bmZ3bmZ3/3o7TKSjPInLpPqcMT6/giphy.gif" alt="Funny">
+                </div>
+                <div class="text-side">
+                    <h2>2024 Vibe Check</h2>
+                    <p>Current Status: 404 Brain Not Found. Ready for a reboot?</p>
+                    <button class="next-btn" onclick="nextStep(3)">REBOOT NOW →</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="step" id="step-3" data-step="3">
+            <h2>Core Memories Unlocked 💖</h2>
+            <div class="gallery-wrapper">
+                <div class="photo-card" style="--i:1"><img src="https://picsum.photos/400/500?random=1" alt="Me"></div>
+                <div class="photo-card" style="--i:2"><img src="https://picsum.photos/400/500?random=2" alt="Me"></div>
+                <div class="photo-card" style="--i:3"><img src="https://picsum.photos/400/500?random=3" alt="Me"></div>
+            </div>
+            <button class="next-btn" onclick="nextStep(4)">Love it! Next →</button>
+        </section>
+
+        <section class="step" id="step-4" data-step="4">
+            <div class="glass-card">
+                <h2>Your 2025 Destiny 🔮</h2>
+                <div id="resolution-display" class="neon-box">SYSTEM IDLE...</div>
+                <button class="action-btn" onclick="generateResolution()">GENERATE FATE</button>
+                <button class="next-btn" onclick="nextStep(5)">ACCEPT DESTINY →</button>
+            </div>
+        </section>
+
+        <section class="step" id="step-5" data-step="5">
+            <div class="hype-canvas">
+                <h2>CATCH THE HYPE! ⚡</h2>
+                <p>Hover over the screen to trigger particles</p>
+                <div id="hype-particles"></div>
+                <button class="next-btn" onclick="nextStep(6)">COUNTDOWN ZONE →</button>
+            </div>
+        </section>
+
+        <section class="step" id="step-6" data-step="6">
+            <div class="timer-wrapper">
+                <h3 class="status-msg">TIME REMAINING UNTIL GREATNESS</h3>
+                <div id="countdown-display">
+                    <div class="time-block"><span id="days">00</span><small>Days</small></div>
+                    <div class="time-block"><span id="hours">00</span><small>Hours</small></div>
+                    <div class="time-block"><span id="minutes">00</span><small>Mins</small></div>
+                    <div class="time-block"><span id="seconds">00</span><small>Secs</small></div>
+                </div>
+                <button class="next-btn" onclick="nextStep(7)">ENTER FINAL STAGE →</button>
+            </div>
+        </section>
+
+        <section class="step" id="step-7" data-step="7">
+            <div class="war-zone">
+                <h1 class="shimmer">FINAL CLASH</h1>
+                <div id="big-number">10</div>
+            </div>
+        </section>
+
+        <section class="step" id="step-8" data-step="8">
+            <div class="celebration">
+                <h1 class="fireworks-text">2025</h1>
+                <h2 class="bounce-in">HAPPY NEW YEAR!</h2>
+                <div class="stats-card">
+                    <p>Level Up Complete. Current Level: 2025</p>
+                </div>
+                <button class="next-btn" onclick="nextStep(9)">VIEW SURPRISE →</button>
+            </div>
+        </section>
+
+        <section class="step" id="step-9" data-step="9">
+            <div class="letter-container">
+                <div class="letter">
+                    <h3>A Note to Future You 💌</h3>
+                    <p id="typewriter-text"></p>
+                </div>
+                <button class="next-btn" onclick="nextStep(10)">FINISH HIM →</button>
+            </div>
+        </section>
+
+        <section class="step" id="step-10" data-step="10">
+            <div class="disco-ball"></div>
+            <h1 class="strobe-text">LET'S PARTY! 🕺💃</h1>
+            <div class="song-info">Now Playing: "New Year Anthem"</div>
+            <button class="mega-btn" onclick="location.reload()">REPLAY THE MAGIC</button>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</body>
+</html>
