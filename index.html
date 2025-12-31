@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025 | EXTREME NEW YEAR EXPERIENCE</title>
+    <title>2026 | EXTREME NEW YEAR EXPERIENCE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -17,29 +18,29 @@
     </div>
 
     <audio id="bgMusic" loop>
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" type="audio/mpeg">
     </audio>
 
     <main id="viewport">
         
         <section class="step active" id="step-1" data-step="1">
             <div class="glass-card">
-                <h1 class="glitch" data-text="WELCOME TO 2025">WELCOME TO 2025</h1>
-                <p>You are about to enter a high-performance countdown zone.</p>
+                <h1 class="glitch" data-text="WELCOME TO 2026">WELCOME TO 2026</h1>
+                <p>Ready for the most extreme countdown of your life?</p>
                 <div class="loader-bar"><div class="progress"></div></div>
-                <button class="mega-btn" onclick="nextStep(2)">INITIALIZE SYSTEM</button>
+                <button class="mega-btn" onclick="nextStep(2)">INITIALIZE PARTY 🚀</button>
             </div>
         </section>
 
         <section class="step" id="step-2" data-step="2">
             <div class="grid-layout">
                 <div class="meme-container">
-                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueGZ3bmZ3bmZ3bmZ3/3o7TKSjPInLpPqcMT6/giphy.gif" alt="Funny">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueGZ3bmZ3bmZ3bmZ3/26tP2XGboIb37wZ2g/giphy.gif" alt="Funny" style="width:100%; border-radius:15px;">
                 </div>
                 <div class="text-side">
-                    <h2>2024 Vibe Check</h2>
-                    <p>Current Status: 404 Brain Not Found. Ready for a reboot?</p>
-                    <button class="next-btn" onclick="nextStep(3)">REBOOT NOW →</button>
+                    <h2>2025 Vibe Check 😂</h2>
+                    <p>Me trying to act normal after all the chaos this year!</p>
+                    <button class="next-btn" onclick="nextStep(3)">Chalo Aage Badho →</button>
                 </div>
             </div>
         </section>
@@ -47,35 +48,36 @@
         <section class="step" id="step-3" data-step="3">
             <h2>Core Memories Unlocked 💖</h2>
             <div class="gallery-wrapper">
-                <div class="photo-card" style="--i:1"><img src="https://picsum.photos/400/500?random=1" alt="Me"></div>
-                <div class="photo-card" style="--i:2"><img src="https://picsum.photos/400/500?random=2" alt="Me"></div>
-                <div class="photo-card" style="--i:3"><img src="https://picsum.photos/400/500?random=3" alt="Me"></div>
+                <div class="photo-card" style="--i:1"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400" alt="Cute 1"></div>
+                <div class="photo-card" style="--i:2"><img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=400" alt="Cute 2"></div>
+                <div class="photo-card" style="--i:3"><img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400" alt="Cute 3"></div>
             </div>
-            <button class="next-btn" onclick="nextStep(4)">Love it! Next →</button>
+            <p style="margin-top:20px;">Some moments are just pure magic.</p>
+            <button class="next-btn" onclick="nextStep(4)">Aww, Next! →</button>
         </section>
 
         <section class="step" id="step-4" data-step="4">
             <div class="glass-card">
-                <h2>Your 2025 Destiny 🔮</h2>
-                <div id="resolution-display" class="neon-box">SYSTEM IDLE...</div>
+                <h2>Your 2026 Destiny 🔮</h2>
+                <div id="resolution-display" class="neon-box" style="font-size: 1.5rem; margin: 20px 0; color: #00f2ff;">SYSTEM IDLE...</div>
                 <button class="action-btn" onclick="generateResolution()">GENERATE FATE</button>
-                <button class="next-btn" onclick="nextStep(5)">ACCEPT DESTINY →</button>
+                <button class="next-btn" onclick="nextStep(5)">ACCEPT IT →</button>
             </div>
         </section>
 
         <section class="step" id="step-5" data-step="5">
             <div class="hype-canvas">
                 <h2>CATCH THE HYPE! ⚡</h2>
-                <p>Hover over the screen to trigger particles</p>
-                <div id="hype-particles"></div>
+                <p>Feel the energy building up...</p>
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueGZ3bmZ3bmZ3bmZ3/l41lTfuxV5R86FhM4/giphy.gif" width="300">
                 <button class="next-btn" onclick="nextStep(6)">COUNTDOWN ZONE →</button>
             </div>
         </section>
 
         <section class="step" id="step-6" data-step="6">
             <div class="timer-wrapper">
-                <h3 class="status-msg">TIME REMAINING UNTIL GREATNESS</h3>
-                <div id="countdown-display">
+                <h3 class="status-msg">TIME REMAINING UNTIL 2026</h3>
+                <div id="countdown-display" style="display: flex; gap: 15px; justify-content: center; margin-top: 20px;">
                     <div class="time-block"><span id="days">00</span><small>Days</small></div>
                     <div class="time-block"><span id="hours">00</span><small>Hours</small></div>
                     <div class="time-block"><span id="minutes">00</span><small>Mins</small></div>
@@ -87,43 +89,37 @@
 
         <section class="step" id="step-7" data-step="7">
             <div class="war-zone">
-                <h1 class="shimmer">FINAL CLASH</h1>
-                <div id="big-number">10</div>
+                <h1 class="shimmer">GET READY...</h1>
+                <div id="big-number" style="font-size: 10rem; color: #ff007a; font-family: 'Orbitron';">10</div>
             </div>
         </section>
 
         <section class="step" id="step-8" data-step="8">
             <div class="celebration">
-                <h1 class="fireworks-text">2025</h1>
-                <h2 class="bounce-in">HAPPY NEW YEAR!</h2>
-                <div class="stats-card">
-                    <p>Level Up Complete. Current Level: 2025</p>
-                </div>
+                <h1 class="glitch" style="font-size: 5rem;">2026</h1>
+                <h2 class="glow-text">HAPPY NEW YEAR! 🎇</h2>
+                <p>Welcome to a brand new chapter.</p>
                 <button class="next-btn" onclick="nextStep(9)">VIEW SURPRISE →</button>
             </div>
         </section>
 
         <section class="step" id="step-9" data-step="9">
-            <div class="letter-container">
-                <div class="letter">
-                    <h3>A Note to Future You 💌</h3>
-                    <p id="typewriter-text"></p>
-                </div>
-                <button class="next-btn" onclick="nextStep(10)">FINISH HIM →</button>
+            <div class="letter-container" style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 20px;">
+                <h3>A Special Note 💌</h3>
+                <p id="typewriter-text" style="font-size: 1.2rem; min-height: 100px;"></p>
+                <button class="next-btn" onclick="nextStep(10)">LAST STEP →</button>
             </div>
         </section>
 
         <section class="step" id="step-10" data-step="10">
-            <div class="disco-ball"></div>
-            <h1 class="strobe-text">LET'S PARTY! 🕺💃</h1>
-            <div class="song-info">Now Playing: "New Year Anthem"</div>
+            <h1 class="strobe-text" style="font-size: 4rem;">DISCO TIME! 🕺💃</h1>
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueGZ3bmZ3bmZ3bmZ3/l2JhpjWPzDr9bnUE8/giphy.gif" width="300">
             <button class="mega-btn" onclick="location.reload()">REPLAY THE MAGIC</button>
         </section>
 
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
